@@ -14,7 +14,8 @@ dev.off()
 
 # Word cloud
 png(filename="output/wordcloud.png",width=1200,height=1200,res=300)
-library('wordcloud')
+library(wordcloud)
+library(stringr)
 myexperience <- tolower(mysurveys$prev_experience)
 myexperience <- str_replace_all(myexperience,"[^[:alpha:]]"," ")
 myexperience <- str_replace_all(myexperience, "[[:blank:]]+", " ")
@@ -26,7 +27,8 @@ allwords <- allwords[!allwords[,1] %in% c('of','am','no','a','i','in',
                                           'an','or','but','ve','about','had',
                                           'did','done','do','our','is','not',
                                           'that','this','we','by','some','any',
-                                          'it','none','from','was'),]
+                                          'it','none','from','was','also','there',
+                                          'into','where'),]
 wordcloud(allwords[,1],allwords[,2],scale=c(2,0.5),rot.per=0.1,max.words=300,
           random.order=FALSE,colors=rainbow(20,start=0.25,end=1,v=0.6),random.color=TRUE)
 dev.off()
