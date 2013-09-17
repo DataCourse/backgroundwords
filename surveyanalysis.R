@@ -7,9 +7,9 @@ mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE)
 mycounts <- mysurveys$X.record_id
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,4000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
-abline(h=seq(0,4000,1000),lwd=1)
-abline(h=seq(500,3500,1000),lty="dashed")
+plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
+abline(h=seq(0,5000,1000),lwd=1)
+abline(h=seq(500,4500,1000),lty="dashed")
 dev.off()
 
 # Word cloud
