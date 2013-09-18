@@ -9,7 +9,7 @@ mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
 plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
 abline(h=seq(0,5000,1000),lwd=1)
-abline(h=seq(500,4500,1000),lty="dashed")
+#abline(h=seq(500,4500,1000),lty="dashed")
 dev.off()
 
 # Word cloud
@@ -28,7 +28,9 @@ allwords <- allwords[!allwords[,1] %in% c('of','am','no','a','i','in',
                                           'did','done','do','our','is','not',
                                           'that','this','we','by','some','any',
                                           'it','none','from','was','also','there',
-                                          'into','where'),]
+                                          'into','where', 'these', 'nil', 'both',
+                                          'are','don','which','them','what','such',
+                                          'their','non'),]
 wordcloud(allwords[,1],allwords[,2],scale=c(2,0.5),rot.per=0.1,max.words=300,
           random.order=FALSE,colors=rainbow(20,start=0.25,end=1,v=0.6),random.color=TRUE)
 dev.off()
