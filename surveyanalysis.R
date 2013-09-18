@@ -10,6 +10,8 @@ png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
 plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
 abline(h=seq(0,5000,1000),lwd=1)
 #abline(h=seq(500,4500,1000),lty="dashed")
+abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
+abline(v=as.POSIXct("2013-09-16 16:00:00")) #When the course was opened
 dev.off()
 
 # Word cloud
