@@ -19,9 +19,7 @@ countries <- read.csv(file="countries.csv")
 countryFreqs <- data.frame(table(mysurveys$country))
 names(countryFreqs)<- c("code","frequency")
 countryFreqs <- merge(countryFreqs,countries)
-write.csv(countryFreqs,file="output/countryFreq.csv")
-
-
+write.csv(countryFreqs,file="output/countryFreq.csv",na="",row.names=FALSE)
 
 # Word cloud
 png(filename="output/wordcloud.png",width=1200,height=1200,res=300)
