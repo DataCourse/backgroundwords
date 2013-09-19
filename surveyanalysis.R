@@ -14,6 +14,15 @@ abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
 abline(v=as.POSIXct("2013-09-16 16:00:00")) #When the course was opened
 dev.off()
 
+# Country Frequency
+countries <- read.csv(file="countries.csv")
+countryFreqs <- data.frame(table(mysurveys$country))
+names(countryFreqs)<- c("code","frequency")
+countryFreqs <- merge(countryFreqs,countries)
+write.csv(countryFreqs,file="output/countryFreq.csv")
+
+
+
 # Word cloud
 png(filename="output/wordcloud.png",width=1200,height=1200,res=300)
 library(wordcloud)
