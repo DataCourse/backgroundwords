@@ -52,38 +52,38 @@ code,countryName,iso3
 51,"Congo, Republic of",COG
 52,"Congo, The Democratic Republic of the",COD
 53,"Cook Islands",COK
-54,"Costa Rica"
-55,"Cote d'Ivoire"
-56,"Croatia/Hrvatska"
-57,"Cuba"
-58,"Cyprus"
-59,"Czech Republic"
-60,"Denmark"
-61,"Djibouti"
-62,"Dominica"
-63,"Dominican Republic"
-64,"East Timor"
-65,"Ecuador"
-66,"Egypt"
-67,"El Salvador"
-68,"Equatorial Guinea"
-69,"Eritrea"
-70,"Estonia"
-71,"Ethiopia"
-72,"European Union"
-73,"Falkland Islands (Malvinas)"
-74,"Faroe Islands"
-75,"Fiji"
-76,"Finland"
-77,"France"
-78,"French Guiana"
-79,"French Polynesia"
-80,"French Southern Territories"
-81,"Gabon"
-82,"Gambia"
-83,"Georgia"
-84,"Germany"
-85,"Ghana"
+54,"Costa Rica",CRI
+55,"Cote d'Ivoire",CIV
+56,"Croatia/Hrvatska",HRV
+57,"Cuba",CUB
+58,"Cyprus",CYP
+59,"Czech Republic",CZE
+60,"Denmark",DNK
+61,"Djibouti",DJI
+62,"Dominica",DMA
+63,"Dominican Republic",DOM
+64,"East Timor",TMP
+65,"Ecuador",ECU
+66,"Egypt",EGY
+67,"El Salvador",SLV
+68,"Equatorial Guinea",GNQ
+69,"Eritrea",ERI
+70,"Estonia",EST
+71,"Ethiopia",ETH
+72,"European Union",NA
+73,"Falkland Islands (Malvinas)",FLK
+74,"Faroe Islands",FRO
+75,"Fiji",FJI
+76,"Finland",FIN
+77,"France",FRA
+78,"French Guiana",GUF
+79,"French Polynesia",PYF
+80,"French Southern Territories",ATF
+81,"Gabon",GAB
+82,"Gambia",GMB
+83,"Georgia",GEO
+84,"Germany",DEU
+85,"Ghana",GHA
 86,"Gibraltar"
 87,"Greece"
 88,"Greenland"
