@@ -1,14 +1,15 @@
 # Empty memory and read the surveys 
 # (need to be downloaded from REDCap and stored input/survey.csv)
 rm(list=ls())
-mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE)
+mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE )
 
 # Plot the counts of survey responses over time
-mycounts <- mysurveys$X.record_id
+if ("X.record_id" %in% names(mysurveys)) mysurveys$record_id <- mysurveys$X.record_id
+mycounts <- mysurveys$record_id
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
-abline(h=seq(0,5000,1000),lwd=1)
+plot(mytimes,mycounts,type="l",ylim=c(0,6000),lwd=3,xlab="Time (UTC)",ylab="# of Survey Responses")
+abline(h=seq(0,6000,1000),lwd=1)
 #abline(h=seq(500,4500,1000),lty="dashed")
 abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
 abline(v=as.POSIXct("2013-09-16 16:00:00")) #When the course was opened

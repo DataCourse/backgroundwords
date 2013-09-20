@@ -4,38 +4,38 @@ code,countryName,iso3
 3,"Albania",ALB
 4,"Algeria",DZA
 5,"American Samoa",ASM
-6,"Andorra"
-7,"Angola"
-8,"Anguillaal"
-9,"Antarctica"
-10,"Antigua and Barbuda"
-11,"Argentina"
-12,"Armenia"
-13,"Aruba"
-14,"Ascension Island"
-15,"Australia"
-16,"Austria"
-17,"Azerbaijan"
-18,"Bahamas"
-19,"Bahrain"
-20,"Bangladesh"
-21,"Barbados"
-22,"Belarus"
-23,"Belgium"
-24,"Belize"
-25,"Benin"
-26,"Bermuda"
-27,"Bhutan"
-28,"Bolivia"
-29,"Bosnia and Herzegovina"
-30,"Botswana"
-31,"Bouvet Island"
-32,"Brazil"
-33,"British Indian Ocean Territory"
-34,"Brunei Darussalam"
-35,"Bulgaria"
-36,"Burkina Faso"
-37,"Burundi"
+6,"Andorra",AND
+7,"Angola",AGO
+8,"Anguillaal",AIA
+9,"Antarctica",ATA
+10,"Antigua and Barbuda",ATG
+11,"Argentina",ARG
+12,"Armenia",ARM
+13,"Aruba",ABW
+14,"Ascension Island",ASC
+15,"Australia",AUS
+16,"Austria",AUT
+17,"Azerbaijan",AZE
+18,"Bahamas",BHS
+19,"Bahrain",BHR
+20,"Bangladesh",BGD
+21,"Barbados",BRB
+22,"Belarus",BLR
+23,"Belgium",BEL
+24,"Belize",BLZ
+25,"Benin",BEN
+26,"Bermuda",BMU
+27,"Bhutan",BTN
+28,"Bolivia",BOL
+29,"Bosnia and Herzegovina",BIH
+30,"Botswana",BWA
+31,"Bouvet Island",BVT
+32,"Brazil",BRA
+33,"British Indian Ocean Territory",IOT
+34,"Brunei Darussalam",BRN
+35,"Bulgaria",BGR
+36,"Burkina Faso",BFA
+37,"Burundi",BDI
 38,"Cambodia"
 39,"Cameroon"
 40,"Canada",CAN
