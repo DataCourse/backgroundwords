@@ -41,17 +41,17 @@ code,countryName,iso3
 40,"Canada",CAN
 41,"Cape Verde",CPV
 42,"Cayman Islands",CYM
-43,"Central African Republic"
-44,"Chad"
-45,"Chile"
-46,"China"
-47,"Christmas Island"
-48,"Cocos (Keeling) Islands"
-49,"Colombia"
-50,"Comoros"
-51,"Congo, Republic of"
-52,"Congo, The Democratic Republic of the"
-53,"Cook Islands"
+43,"Central African Republic",CAF
+44,"Chad",TCD
+45,"Chile",RCH
+46,"China",CHN
+47,"Christmas Island",CXR
+48,"Cocos (Keeling) Islands",CCK
+49,"Colombia",COL
+50,"Comoros",COM
+51,"Congo, Republic of",COG
+52,"Congo, The Democratic Republic of the",COD
+53,"Cook Islands",COK
 54,"Costa Rica"
 55,"Cote d'Ivoire"
 56,"Croatia/Hrvatska"
