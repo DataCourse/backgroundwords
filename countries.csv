@@ -43,7 +43,7 @@ code,countryName,iso3
 42,"Cayman Islands",CYM
 43,"Central African Republic",CAF
 44,"Chad",TCD
-45,"Chile",RCH
+45,"Chile",CHL
 46,"China",CHN
 47,"Christmas Island",CXR
 48,"Cocos (Keeling) Islands",CCK
@@ -84,49 +84,49 @@ code,countryName,iso3
 83,"Georgia",GEO
 84,"Germany",DEU
 85,"Ghana",GHA
-86,"Gibraltar"
-87,"Greece"
-88,"Greenland"
-89,"Grenada"
-90,"Guadeloupe"
-91,"Guam"
-92,"Guatemala"
-93,"Guernsey"
-94,"Guinea"
-95,"Guinea-Bissau"
-96,"Guyana"
-97,"Haiti"
-98,"Heard and McDonald Islands"
-99,"Holy See (Vatican City State)"
-100,"Honduras"
-101,"Hong Kong"
-102,"Hungary"
-103,"Iceland"
-104,"India"
-105,"Indonesia"
-106,"Iran, Islamic Republic of"
-107,"Iraq"
-108,"Ireland"
+86,"Gibraltar",GIB
+87,"Greece",GRC
+88,"Greenland",GRL
+89,"Grenada",GRD
+90,"Guadeloupe",GLP
+91,"Guam",GUM
+92,"Guatemala",GTM
+93,"Guernsey",GGY
+94,"Guinea",GIN
+95,"Guinea-Bissau",GNB
+96,"Guyana",GUY
+97,"Haiti",HTI
+98,"Heard and McDonald Islands",HMD
+99,"Holy See (Vatican City State)",VAT
+100,"Honduras",HND
+101,"Hong Kong",HKG
+102,"Hungary",HUN
+103,"Iceland",ISL
+104,"India",IND
+105,"Indonesia",IDN
+106,"Iran, Islamic Republic of",IRN
+107,"Iraq",IRQ
+108,"Ireland",IRL
 109,"Isle of Man"
-110,"Israel"
-111,"Italy"
-112,"Jamaica"
-113,"Japan"
-114,"Jersey"
-115,"Jordan"
-116,"Kazakhstan"
-117,"Kenya"
+110,"Israel",ISR
+111,"Italy",ITA
+112,"Jamaica",JAM
+113,"Japan",JPN
+114,"Jersey",JEY
+115,"Jordan",JOR
+116,"Kazakhstan",KAZ
+117,"Kenya",KEN
 118,"Kiribati"
-119,"Korea, Democratic People's Republic"
-120,"Korea, Republic of"
-121,"Kuwait"
+119,"Korea, Democratic People's Republic",PRK
+120,"Korea, Republic of",KOR
+121,"Kuwait",KWT
 122,"Kyrgyzstan"
 123,"Lao People's Democratic Republic"
-124,"Latvia"
-125,"Lebanon"
+124,"Latvia",LVA
+125,"Lebanon",LEB
 126,"Lesotho"
 127,"Liberia"
-128,"Libyan Arab Jamahiriya"
+128,"Libyan Arab Jamahiriya",LBY
 129,"Liechtenstein"
 130,"Lithuania"
 131,"Luxembourg"
@@ -143,47 +143,47 @@ code,countryName,iso3
 142,"Mauritania"
 143,"Mauritius"
 144,"Mayotte"
-145,"Mexico"
+145,"Mexico",MEX
 146,"Micronesia, Federated States of"
 147,"Moldova, Republic of"
 148,"Monaco"
 149,"Mongolia"
 150,"Montenegro"
 151,"Montserrat"
-152,"Morocco"
+152,"Morocco",MAR
 153,"Mozambique"
 154,"Myanmar"
 155,"Namibia"
 156,"Nauru"
 157,"Nepal"
-158,"Netherlands"
+158,"Netherlands",NLD
 159,"Netherlands Antilles"
 160,"New Caledonia"
-161,"New Zealand"
+161,"New Zealand",NZL
 162,"Nicaragua"
 163,"Niger"
-164,"Nigeria"
+164,"Nigeria",NGA
 165,"Niue"
 166,"Norfolk Island"
 167,"Northern Mariana Islands"
-168,"Norway"
-169,"Oman"
-170,"Pakistan"
+168,"Norway",NOR
+169,"Oman",OMN
+170,"Pakistan",PAK
 171,"Palau"
 172,"Palestinian Territory, Occupied"
 173,"Panama"
-174,"Papua New Guinea"
-175,"Paraguay"
-176,"Peru"
-177,"Philippines"
+174,"Papua New Guinea",PNG
+175,"Paraguay",PRY
+176,"Peru",PER
+177,"Philippines",PHL
 178,"Pitcairn Island"
-179,"Poland"
-180,"Portugal"
+179,"Poland",POL
+180,"Portugal",PRT
 181,"Puerto Rico"
 182,"Qatar"
 183,"Reunion Island"
-184,"Romania"
-185,"Russian Federation"
+184,"Romania",ROU
+185,"Russian Federation",RUS
 186,"Rwanda"
 187,"Saint Helena"
 188,"Saint Kitts and Nevis"
@@ -193,58 +193,58 @@ code,countryName,iso3
 192,"Samoa"
 193,"San Marino"
 194,"Sao Tome and Principe"
-195,"Saudi Arabia"
+195,"Saudi Arabia",SAU
 196,"Senegal"
 197,"Serbia"
 198,"Seychelles"
 199,"Sierra Leone"
 200,"Singapore"
 201,"Slovak Republic"
-202,"Slovenia"
+202,"Slovenia",SVN
 203,"Solomon Islands"
 204,"Somalia"
-205,"South Africa"
+205,"South Africa",ZAF
 206,"South Georgia and the South Sandwich Islands"
 207,"Soviet Union"
-208,"Spain"
-209,"Sri Lanka"
-210,"Sudan"
-211,"Suriname"
-212,"Svalbard and Jan Mayen Islands"
-213,"Swaziland"
-214,"Sweden"
-215,"Switzerlandci"
-216,"Syrian Arab Republic"
-217,"Taiwan"
-218,"Tajikistan"
-219,"Tanzania"
-220,"Thailand"
-221,"Timor-Leste"
-222,"Togo"
-223,"Tokelau"
-224,"Tonga"
-225,"Trinidad and Tobago"
-226,"Tunisia"
-227,"Turkey"
-228,"Turkmenistan"
-229,"Turks and Caicos Islands"
-230,"Tuvalu"
-231,"Uganda"
-232,"Ukraine"
-233,"United Arab Emirates"
-234,"United Kingdom"
+208,"Spain",ESP
+209,"Sri Lanka",LKA
+210,"Sudan",SDN
+211,"Suriname",SUR
+212,"Svalbard and Jan Mayen Islands",SJM
+213,"Swaziland",SWZ
+214,"Sweden",SWE
+215,"Switzerlandci",CHE
+216,"Syrian Arab Republic",SYR
+217,"Taiwan",TWN
+218,"Tajikistan",TJK
+219,"Tanzania",TZA
+220,"Thailand",THA
+221,"Timor-Leste",TLS
+222,"Togo",TGO
+223,"Tokelau",TKL
+224,"Tonga",TON
+225,"Trinidad and Tobago",TTO
+226,"Tunisia",TUN
+227,"Turkey",TUR
+228,"Turkmenistan",TKM
+229,"Turks and Caicos Islands",TCA
+230,"Tuvalu",TUV
+231,"Uganda",UGA
+232,"Ukraine",UKR
+233,"United Arab Emirates",ARE
+234,"United Kingdom",GBR
 235,"United States",USA
-236,"United States Minor Outlying Islands"
-237,"Uruguay"
-238,"Uzbekistan"
-239,"Vanuatu"
-240,"Venezuela"
-241,"Vietnam"
-242,"Virgin Islands, British"
-243,"Virgin Islands, U.S."
-244,"Wallis and Futuna Islands"
-245,"Western Sahara"
-246,"Yemen"
-247,"Yugoslavia"
-248,"Zambia"
-249,"Zimbabwe"
+236,"United States Minor Outlying Islands",UMI
+237,"Uruguay",URY
+238,"Uzbekistan",UZB
+239,"Vanuatu",VUT
+240,"Venezuela",VEN
+241,"Vietnam",VNM
+242,"Virgin Islands, British",VGB
+243,"Virgin Islands, U.S.",VIR
+244,"Wallis and Futuna Islands",WLF
+245,"Western Sahara",ESH
+246,"Yemen",YEM
+247,"Yugoslavia",YUG
+248,"Zambia",ZMB
+249,"Zimbabwe",ZWE
