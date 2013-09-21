@@ -21,9 +21,52 @@ dev.off()
 # Age histogram
 png(filename="output/ages.png",width=1200,height=800,res=150)
 myages = as.numeric(mysurveys$age)
-hist(myages,breaks=seq(0,100,10))
+maintext = paste(c("Age of Survey Respondents\n(N=",dim(mysurveys)[1],")"),collapse="")
+hist(myages,breaks=seq(0,100,5),main=maintext,
+     xlab="Age (years)", ylab="Number of Responses", col="blue", 
+     border="white")
 dev.off()
 
+# How did they find out about the course
+png(file="output/howfound.png",width=1200,height=600,res=150)
+myfoundout = c(
+  sum(mysurveys$found_out___1),
+  sum(mysurveys$found_out___2),
+  sum(mysurveys$found_out___3),
+  sum(mysurveys$found_out___4),
+  sum(mysurveys$found_out___5),
+  sum(mysurveys$found_out___6),
+  sum(mysurveys$found_out___7)
+)
+names(myfoundout) <- c(
+  "Coursera website","Press Coverage",
+  "Vanderbilt University Publicity", "Friend/Colleague",
+  "Search Engine", "From the REDCap consortium", "Other"
+  )
+par(mar=c(2,13,2,1))
+barplot(sort(myfoundout), horiz=TRUE, las=1, 
+        main='"How did you find out about this course?"', 
+        xlim=c(0,max(myfoundout)+499),col="black",border="white")
+print(par()$mar)
+dev.off()
+
+# Education Level
+png(file="output/education.png",width=1200,height=600,res=150)
+edulabels = c(
+  "Junior high / middle school or less",
+  "Some high school",
+  "High school graduate",
+  "Postsecondary school other than college",
+  "Some college",
+  "College degree",
+  "Some graduate school",
+  "Graduate degree"
+)
+myeducations <- factor( mysurveys$highest_education , labels=edulabels)
+par(mar=c(2,17,2,1))
+plot(myeducations,horiz=TRUE,las=1,col="black",border="white",
+     main="Education Level")
+dev.off()
 
 # Country Frequency
 png(filename="output/map.png",width=1200,height=600,res=125)
