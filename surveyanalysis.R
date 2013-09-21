@@ -15,11 +15,18 @@ plot(mytimes,mycounts,type="l",ylim=c(0,6000),lwd=3,xlab="Time (UTC)",
 abline(h=seq(0,6000,1000),lwd=1)
 #abline(h=seq(500,4500,1000),lty="dashed")
 abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
-abline(v=as.POSIXct("2013-09-16 16:00:00")) #When the course was opened
+abline(v=as.POSIXct("2013-09-16 16:00:00"),lty="dashed") #When the course was opened
 dev.off()
 
+# Age histogram
+png(filename="output/ages.png",width=1200,height=800,res=150)
+myages = as.numeric(mysurveys$age)
+hist(myages,breaks=seq(0,100,10))
+dev.off()
+
+
 # Country Frequency
-png(filename="output/map.png",width=1200,height=600,res=72)
+png(filename="output/map.png",width=1200,height=600,res=125)
 countries <- read.csv(file="countries.csv")
 countryFreqs <- data.frame(table(mysurveys$country))
 names(countryFreqs)<- c("code","frequency")
@@ -28,9 +35,8 @@ write.csv(countryFreqs,file="output/countryFreq.csv",na="",row.names=FALSE)
 cmap <- cshp(date=as.Date("2012-06-30"))
 o <- match(cmap@data$ISO1AL3,countryFreqs$iso3)
 cmap@data <- cbind(cmap@data,countryFreqs[o,c("iso3","frequency")])
-#cmap@data <- merge(cmap@data,countryFreqs,by.x="ISO1AL3",by.y="iso3",all.x=TRUE)
-p1 <- spplot(cmap,"frequency", at=c(seq(10,249,10),seq(250,499,50),500,2500),  
-             col.regions=c(rainbow(31,start=0,end=0.3,v=0.9))[seq(31,1,-1)],
+p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),500,2500),  
+             col.regions=c(rainbow(32,start=0,end=0.3,v=0.9))[seq(32,1,-1)],
              lwt=0.25)
 print(p1)
 dev.off()

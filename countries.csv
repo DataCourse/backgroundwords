@@ -107,7 +107,7 @@ code,countryName,iso3
 106,"Iran, Islamic Republic of",IRN
 107,"Iraq",IRQ
 108,"Ireland",IRL
-109,"Isle of Man"
+109,"Isle of Man",IMN
 110,"Israel",ISR
 111,"Italy",ITA
 112,"Jamaica",JAM
@@ -116,96 +116,96 @@ code,countryName,iso3
 115,"Jordan",JOR
 116,"Kazakhstan",KAZ
 117,"Kenya",KEN
-118,"Kiribati"
+118,"Kiribati",KIR
 119,"Korea, Democratic People's Republic",PRK
 120,"Korea, Republic of",KOR
 121,"Kuwait",KWT
-122,"Kyrgyzstan"
-123,"Lao People's Democratic Republic"
+122,"Kyrgyzstan",KGZ
+123,"Lao People's Democratic Republic",LAO
 124,"Latvia",LVA
 125,"Lebanon",LEB
-126,"Lesotho"
-127,"Liberia"
+126,"Lesotho",LSO
+127,"Liberia",LBR
 128,"Libyan Arab Jamahiriya",LBY
-129,"Liechtenstein"
-130,"Lithuania"
-131,"Luxembourg"
-132,"Macao"
-133,"Macedonia, The Former Yugoslav Republic of"
-134,"Madagascar"
-135,"Malawi"
-136,"Malaysia"
-137,"Maldives"
-138,"Mali"
-139,"Malta"
-140,"Marshall Islands"
-141,"Martinique"
-142,"Mauritania"
-143,"Mauritius"
-144,"Mayotte"
+129,"Liechtenstein",LIE
+130,"Lithuania",LTU
+131,"Luxembourg",LUX
+132,"Macao",MAC
+133,"Macedonia, The Former Yugoslav Republic of",MKD
+134,"Madagascar",MDG
+135,"Malawi",MWI
+136,"Malaysia",MYS
+137,"Maldives",MDV
+138,"Mali",MLI
+139,"Malta",MLT
+140,"Marshall Islands",MHL
+141,"Martinique",MTQ
+142,"Mauritania",MRT
+143,"Mauritius",MUS
+144,"Mayotte",MYT
 145,"Mexico",MEX
-146,"Micronesia, Federated States of"
-147,"Moldova, Republic of"
-148,"Monaco"
-149,"Mongolia"
-150,"Montenegro"
-151,"Montserrat"
+146,"Micronesia, Federated States of",FSM
+147,"Moldova, Republic of",MDA
+148,"Monaco",MCO
+149,"Mongolia",MNG
+150,"Montenegro",MNE
+151,"Montserrat",MSR
 152,"Morocco",MAR
-153,"Mozambique"
-154,"Myanmar"
-155,"Namibia"
-156,"Nauru"
-157,"Nepal"
+153,"Mozambique",MOZ
+154,"Myanmar",MMR
+155,"Namibia",NAM
+156,"Nauru",NRU
+157,"Nepal",NLP
 158,"Netherlands",NLD
-159,"Netherlands Antilles"
-160,"New Caledonia"
+159,"Netherlands Antilles",ANT
+160,"New Caledonia",NCL
 161,"New Zealand",NZL
-162,"Nicaragua"
-163,"Niger"
+162,"Nicaragua",NIC
+163,"Niger",NER
 164,"Nigeria",NGA
-165,"Niue"
-166,"Norfolk Island"
-167,"Northern Mariana Islands"
+165,"Niue",NIU
+166,"Norfolk Island",NFK
+167,"Northern Mariana Islands",MNP
 168,"Norway",NOR
 169,"Oman",OMN
 170,"Pakistan",PAK
-171,"Palau"
-172,"Palestinian Territory, Occupied"
-173,"Panama"
+171,"Palau",PLW
+172,"Palestinian Territory, Occupied",PSE
+173,"Panama",PAN
 174,"Papua New Guinea",PNG
 175,"Paraguay",PRY
 176,"Peru",PER
 177,"Philippines",PHL
-178,"Pitcairn Island"
+178,"Pitcairn Island",PCN
 179,"Poland",POL
 180,"Portugal",PRT
-181,"Puerto Rico"
-182,"Qatar"
-183,"Reunion Island"
+181,"Puerto Rico",PRI
+182,"Qatar",QAT
+183,"Reunion Island",REU
 184,"Romania",ROU
 185,"Russian Federation",RUS
-186,"Rwanda"
-187,"Saint Helena"
-188,"Saint Kitts and Nevis"
-189,"Saint Lucia"
-190,"Saint Pierre and Miquelon"
-191,"Saint Vincent and the Grenadines"
-192,"Samoa"
-193,"San Marino"
-194,"Sao Tome and Principe"
+186,"Rwanda",RWA
+187,"Saint Helena",SHN
+188,"Saint Kitts and Nevis",KNA
+189,"Saint Lucia",LCA
+190,"Saint Pierre and Miquelon",SPM
+191,"Saint Vincent and the Grenadines",VCT
+192,"Samoa",WSM
+193,"San Marino",SMR
+194,"Sao Tome and Principe",STP
 195,"Saudi Arabia",SAU
-196,"Senegal"
-197,"Serbia"
-198,"Seychelles"
-199,"Sierra Leone"
-200,"Singapore"
-201,"Slovak Republic"
+196,"Senegal",SEN
+197,"Serbia",SRB
+198,"Seychelles",SYC
+199,"Sierra Leone",SLE
+200,"Singapore",SGP
+201,"Slovak Republic",SVK
 202,"Slovenia",SVN
-203,"Solomon Islands"
-204,"Somalia"
+203,"Solomon Islands",SLB
+204,"Somalia",SOM
 205,"South Africa",ZAF
-206,"South Georgia and the South Sandwich Islands"
-207,"Soviet Union"
+206,"South Georgia and the South Sandwich Islands",SGS
+207,"Soviet Union",NA
 208,"Spain",ESP
 209,"Sri Lanka",LKA
 210,"Sudan",SDN
