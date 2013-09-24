@@ -16,6 +16,7 @@ abline(h=seq(0,6000,1000),lwd=1)
 #abline(h=seq(500,4500,1000),lty="dashed")
 abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
 abline(v=as.POSIXct("2013-09-16 16:00:00"),lty="dashed") #When the course was opened
+abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
 dev.off()
 
 # Age histogram
