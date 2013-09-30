@@ -10,14 +10,15 @@ if ("X.record_id" %in% names(mysurveys)) mysurveys$record_id <- mysurveys$X.reco
 mycounts <- mysurveys$record_id
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,6000),lwd=3,xlab="Time (UTC)",
+plot(mytimes,mycounts,type="l",ylim=c(0,6500),lwd=3,xlab="Time (UTC)",
      ylab="# of Survey Responses", xaxs="i", yaxs="i")
 abline(h=seq(0,6000,1000),lwd=1)
-#abline(h=seq(500,4500,1000),lty="dashed")
 abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
-abline(v=as.POSIXct("2013-09-16 16:00:00"),lty="dashed") #When the course was opened
+abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
 abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
+abline(v=as.POSIXct("2013-09-30 16:30:00"),lty="dashed") #When week 3 material and announcement were mailed
 dev.off()
+print("Made survey responses over time")
 
 # Age histogram
 png(filename="output/ages.png",width=1200,height=800,res=150)
@@ -27,6 +28,7 @@ hist(myages,breaks=seq(0,100,5),main=maintext,
      xlab="Age (years)", ylab="Number of Responses", col="blue", 
      border="white")
 dev.off()
+print("Made age distribution")
 
 # How did they find out about the course
 png(file="output/howfound.png",width=1200,height=600,res=150)
@@ -48,8 +50,8 @@ par(mar=c(2,13,2,1))
 barplot(sort(myfoundout), horiz=TRUE, las=1, 
         main='"How did you find out about this course?"', 
         xlim=c(0,max(myfoundout)+499),col="black",border="white")
-print(par()$mar)
 dev.off()
+print("Made how found")
 
 # Education Level
 png(file="output/education.png",width=1200,height=600,res=150)
@@ -66,8 +68,9 @@ edulabels = c(
 myeducations <- factor( mysurveys$highest_education , labels=edulabels)
 par(mar=c(2,17,2,1))
 plot(myeducations,horiz=TRUE,las=1,col="black",border="white",
-     main="Education Level")
+     main="Education Level",,xlim=c(0,max(table(myeducations))+499))
 dev.off()
+print("Made education level")
 
 # Country Frequency
 png(filename="output/map.png",width=1200,height=600,res=125)
@@ -84,6 +87,7 @@ p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),500,2500),
              lwt=0.25)
 print(p1)
 dev.off()
+print("Made country maps")
 
 # Word cloud
 png(filename="output/wordcloud.png",width=1200,height=1200,res=300)
@@ -108,3 +112,4 @@ wordcloud(allwords[,1],allwords[,2],scale=c(2,0.5),rot.per=0.1,max.words=300,
           random.order=FALSE,colors=rainbow(20,start=0.25,end=1,v=0.6),random.color=TRUE)
 dev.off()
 write.csv(allwords,file="output/wordfreq.csv",row.names=FALSE)
+print("Made word cloud")
