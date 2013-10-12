@@ -83,7 +83,7 @@ write.csv(countryFreqs,file="output/countryFreq.csv",na="",row.names=FALSE)
 cmap <- cshp(date=as.Date("2012-06-30"))
 o <- match(cmap@data$ISO1AL3,countryFreqs$iso3)
 cmap@data <- cbind(cmap@data,countryFreqs[o,c("iso3","frequency")])
-p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),500,2500),  
+p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),500,3000),  
              col.regions=c(rainbow(32,start=0,end=0.3,v=0.9))[seq(32,1,-1)],
              lwt=0.25)
 print(p1)
