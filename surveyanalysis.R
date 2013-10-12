@@ -17,6 +17,7 @@ abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
 abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
 abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
 abline(v=as.POSIXct("2013-09-30 16:30:00"),lty="dashed") #When week 3 material and announcement were mailed
+abline(v=as.POSIXct("2013-10-07 14:00:00"),lty="dashed") #When week 4 material and announcement were mailed
 dev.off()
 print("Made survey responses over time")
 
