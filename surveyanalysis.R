@@ -4,28 +4,34 @@ rm(list=ls())
 library(cshapes)
 library(latticeExtra)
 mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE )
+mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
+mystart <- as.POSIXct("2014-01-01")
+myend <- as.POSIXct("2014-07-31")
+mysurveys<-mysurveys[mytimes>=mystart & mytimes<=myend,]
 
 # Plot the counts of survey responses over time
 if ("X.record_id" %in% names(mysurveys)) mysurveys$record_id <- mysurveys$X.record_id
-mycounts <- mysurveys$record_id
+# mycounts <- mysurveys$record_id # no more using survey id from REDCap
+mycounts <- seq(1,nrow(mysurveys))
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,6500),lwd=3,xlab="Time (UTC)",
+plot(mytimes,mycounts,type="l",ylim=c(0,10000),lwd=3,xlab="Time (UTC)",
      ylab="# of Survey Responses", xaxs="i", yaxs="i")
-abline(h=seq(0,6000,1000),lwd=1)
-abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
-abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
-abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
-abline(v=as.POSIXct("2013-09-30 16:30:00"),lty="dashed") #When week 3 material and announcement were mailed
-abline(v=as.POSIXct("2013-10-07 14:00:00"),lty="dashed") #When week 4 material and announcement were mailed
-abline(v=as.POSIXct("2013-10-12 14:46:00"),lty="dashed") #When week survey summary was posted
-abline(v=as.POSIXct("2013-10-16 12:03:00"),lty="dashed") #When week 5 material and announcement were mailed
+abline(h=seq(0,10000,1000),lwd=1)
+# abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
+# abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
+# abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
+# abline(v=as.POSIXct("2013-09-30 16:30:00"),lty="dashed") #When week 3 material and announcement were mailed
+# abline(v=as.POSIXct("2013-10-07 14:00:00"),lty="dashed") #When week 4 material and announcement were mailed
+# abline(v=as.POSIXct("2013-10-12 14:46:00"),lty="dashed") #When week survey summary was posted
+# abline(v=as.POSIXct("2013-10-16 12:03:00"),lty="dashed") #When week 5 material and announcement were mailed
 dev.off()
 print("Made survey responses over time")
 
 # Age histogram
 png(filename="output/ages.png",width=1200,height=800,res=150)
 myages = as.numeric(mysurveys$age)
+myages<-myages[myages>0 & myages<100]
 maintext = paste(c("Age of Survey Respondents\n(N=",dim(mysurveys)[1],")"),collapse="")
 hist(myages,breaks=seq(0,100,5),main=maintext,
      xlab="Age (years)", ylab="Number of Responses", col="blue", 
