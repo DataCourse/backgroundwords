@@ -15,7 +15,7 @@ if ("X.record_id" %in% names(mysurveys)) mysurveys$record_id <- mysurveys$X.reco
 mycounts <- seq(1,nrow(mysurveys))
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,10000),lwd=3,xlab="Time (UTC)",
+plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",
      ylab="# of Survey Responses", xaxs="i", yaxs="i")
 abline(h=seq(0,10000,1000),lwd=1)
 # abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
