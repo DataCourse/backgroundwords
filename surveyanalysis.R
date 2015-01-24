@@ -6,7 +6,7 @@ library(latticeExtra)
 mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE )
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 mystart <- as.POSIXct("2013-01-01")
-myend <- as.POSIXct("2014-12-31")
+myend <- as.POSIXct("2015-01-31")
 mysurveys<-mysurveys[mytimes>=mystart & mytimes<=myend,]
 
 # Plot the counts of survey responses over time
@@ -15,16 +15,13 @@ if ("X.record_id" %in% names(mysurveys)) mysurveys$record_id <- mysurveys$X.reco
 mycounts <- seq(1,nrow(mysurveys))
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
-plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",
+plot(mytimes,mycounts,type="l",ylim=c(0,15000),lwd=3,xlab="Time (UTC)",
      ylab="# of Survey Responses", xaxs="i", yaxs="i")
-abline(h=seq(0,5000,1000),lwd=1)
-# abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
-# abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
-# abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
-# abline(v=as.POSIXct("2013-09-30 16:30:00"),lty="dashed") #When week 3 material and announcement were mailed
-# abline(v=as.POSIXct("2013-10-07 14:00:00"),lty="dashed") #When week 4 material and announcement were mailed
-# abline(v=as.POSIXct("2013-10-12 14:46:00"),lty="dashed") #When week survey summary was posted
-# abline(v=as.POSIXct("2013-10-16 12:03:00"),lty="dashed") #When week 5 material and announcement were mailed
+abline(h=seq(0,15000,1000),lwd=1)
+abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
+abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the session 001 was opened
+abline(v=as.POSIXct("2014-06-02 13:00:00"),lty="dashed") #When the session 002 was opened
+abline(v=as.POSIXct("2014-10-27 13:00:00"),lty="dashed") #When the session 003 was opened
 dev.off()
 print("Made survey responses over time")
 
