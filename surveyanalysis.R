@@ -5,7 +5,7 @@ library(cshapes)
 library(latticeExtra)
 mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE )
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
-mystart <- as.POSIXct("2014-10-01")
+mystart <- as.POSIXct("2013-01-01")
 myend <- as.POSIXct("2014-12-31")
 mysurveys<-mysurveys[mytimes>=mystart & mytimes<=myend,]
 
@@ -91,9 +91,9 @@ write.csv(countryFreqs,file="output/countryFreq.csv",na="",row.names=FALSE)
 cmap <- cshp(date=as.Date("2012-06-30"))
 o <- match(cmap@data$ISO1AL3,countryFreqs$iso3)
 cmap@data <- cbind(cmap@data,countryFreqs[o,c("iso3","frequency")])
-p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),500,1500),  
-             col.regions=c(rainbow(32,start=0,end=0.3,v=0.9))[seq(32,1,-1)],
-             lwt=0.25)
+p1 <- spplot(cmap,"frequency", at=c(seq(0,249,10),seq(250,499,50),seq(500,999,100),seq(1000,5000,1000)),  
+             col.regions=c(rainbow(40,start=0,end=0.3,v=0.9))[seq(40,1,-1)],
+             lwt=0.25, colorkey=FALSE)
 print(p1)
 dev.off()
 print("Made country maps")
