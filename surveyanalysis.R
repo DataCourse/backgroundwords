@@ -5,8 +5,8 @@ library(cshapes)
 library(latticeExtra)
 mysurveys <- read.csv("input/mysurveys.csv", stringsAsFactors=FALSE )
 mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
-mystart <- as.POSIXct("2014-01-01")
-myend <- as.POSIXct("2014-07-31")
+mystart <- as.POSIXct("2014-10-01")
+myend <- as.POSIXct("2014-12-31")
 mysurveys<-mysurveys[mytimes>=mystart & mytimes<=myend,]
 
 # Plot the counts of survey responses over time
@@ -17,7 +17,7 @@ mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
 png(filename="output/surveyresponse.png",width=1280,height=960,res=150)
 plot(mytimes,mycounts,type="l",ylim=c(0,5000),lwd=3,xlab="Time (UTC)",
      ylab="# of Survey Responses", xaxs="i", yaxs="i")
-abline(h=seq(0,10000,1000),lwd=1)
+abline(h=seq(0,5000,1000),lwd=1)
 # abline(v=as.POSIXct("2013-09-11 21:30:00")) #When the survey went out
 # abline(v=as.POSIXct("2013-09-16 15:00:00"),lty="dashed") #When the course was opened
 # abline(v=as.POSIXct("2013-09-23 22:20:00"),lty="dashed") #When the week 2 announcement with a link reminder was sent
